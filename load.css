@@ -1,0 +1,349 @@
+.panel {
+  position: fixed;
+  transition: transform 4s cubic-bezier(.77, 0, .18, 1);
+  
+}
+
+.panel.left {
+  left: 0;
+  top: 0;
+  z-index: 9;
+  display: flex;
+  justify-content: end;
+  place-items: center;
+  border-radius: 1px;
+  height: 100%;
+  width: 50%;
+  background-color: #2f0e07;
+}
+
+.panel.right {
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: start;
+  background-color: #2f0e07;
+  place-items: center;
+  border-radius: 1px;
+  z-index: 9;
+  height: 100%;
+  width: 50%;
+
+
+}
+
+.panel.left.open {
+  transform: translatex(-150%)
+}
+
+.panel.right.open {
+  transform: translatex(200%)
+}
+
+
+.cook {
+  width: 200px;
+  height: 400px;
+  background: #e9ad60;
+  border-radius: 200px 0 0 200px;
+  position: relative;
+  box-shadow:
+    inset -10px -12px 0 #c9823c,
+    inset 7px 8px 0 #f7cd87,
+    0 15px 25px #a67c523d;
+}
+  .chi {
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    background: #57301d;
+    border-radius: 45% 55% 40% 60%;
+  }
+
+  .chi1 {
+    top: 300px;
+    left: 60px;
+  }
+
+  .chi2 {
+    top: 250px;
+    left: 125px;
+  }
+
+  .chi3 {
+    top: 300px;
+    left: 165px;
+  }
+
+  .chi4 {
+    top: 200px;
+    left: 40px;
+  }
+
+  .chi5 {
+    top: 105px;
+    left: 100px;
+  }
+
+  .chi6 {
+    top: 145px;
+    left: 65px;
+  }
+
+  .chi7 {
+    top: 200px;
+    left: 140px;
+  }
+
+  .chi8 {
+    top: 64px;
+    left: 105px;
+  }
+
+
+
+#l {
+  position: relative;
+  left: 100px;
+}
+
+
+.lo {
+  top: 120px;
+
+
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.lo h1 {
+  font-family: "Architects Daughter", cursive;
+  font-weight: 400;
+  color: #2f0e07;
+  font-size: 60px;
+
+}
+
+
+
+
+.cookie {
+  width: 200px;
+  height: 400px;
+  background: #e9ad60;
+  border-radius: 0 200px 200px 0;
+  position: relative;
+  box-shadow:
+    inset -10px -12px 0 #c9823c,
+    inset 7px 8px 0 #f7cd87,
+    0 15px 25px #a67c523d;
+
+}
+
+
+.chip {
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  background: #57301d;
+  border-radius: 45% 55% 40% 60%;
+}
+
+.chip1 {
+  top: 240px;
+  left: 60px;
+}
+
+.chip2 {
+  top: 250px;
+  left: 100px;
+}
+
+.chip3 {
+  top: 200px;
+  left: 165px;
+}
+
+.chip4 {
+  top: 100px;
+  left: 20px;
+}
+
+.chip5 {
+  top: 300px;
+  left: 30px;
+}
+
+.chip6 {
+  top: 110px;
+  left: 65px;
+}
+
+.chip7 {
+  top: 100px;
+  left: 140px;
+}
+
+.chip8 {
+  top: 50px;
+  left: 20px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+  .cook {
+
+    width: 150px;
+    height: 300px;
+    background: #e9ad60;
+    border-radius: 150px 0 0 150px;
+    position: relative;
+    bottom: 50px;
+  }
+
+
+  .chi1 {
+    position: relative;
+    top: 100px;
+    left: 90px;
+  }
+
+  .chi2 {
+    top: 200px;
+    left: 30px;
+  }
+
+  .chi3 {
+    top: 200px;
+    left: 90px;
+  }
+
+  .chi4 {
+    top: 120px;
+    left: 30px;
+  }
+
+  .chi5 {
+    top: 240px;
+    left: 70px;
+  }
+
+  .chi6 {
+    top: 80px;
+    left: 65px;
+  }
+
+  .chi7 {
+    top: 90px;
+    left: 100px;
+  }
+
+  .chi8 {
+    top: 50px;
+    left: 100px;
+  }
+
+
+
+  .cookie {
+    width: 150px;
+    height: 300px;
+
+    border-radius: 0 150px 150px 0;
+    position: relative;
+    bottom: 50px;
+  }
+
+
+
+  .chip1 {
+    top: 200px;
+    left: 60px;
+  }
+
+  .chip2 {
+    top: 200px;
+    left: 20px;
+  }
+
+  .chip3 {
+    top: 200px;
+    left: 60px;
+  }
+
+  .chip4 {
+    top: 90px;
+    left: 20px;
+  }
+
+  .chip5 {
+    top: 150px;
+    left: 30px;
+  }
+
+  .chip6 {
+    top: 80px;
+    left: 65px;
+  }
+
+  .chip7 {
+    top: 140px;
+    left: 110px;
+  }
+
+  .chip8 {
+    top: 50px;
+    left: 20px;
+  }
+
+  .lo {
+    top: 100px;
+
+
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+  }
+
+  .lo h1 {
+    font-family: "Architects Daughter", cursive;
+    font-weight: 400;
+    color: #2f0e07;
+    font-size: 40px;
+
+  }
+
+  #l {
+    position: relative;
+    left: 80px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

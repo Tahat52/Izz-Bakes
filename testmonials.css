@@ -1,0 +1,185 @@
+.testmonials {
+
+  width: 95%;
+  max-width: 1440px;
+  position: relative;
+  top: clamp(4rem, 25vw, 80rem);
+  ;
+  overflow: hidden;
+  margin: 10px auto;
+
+}
+
+.testmonial-heading {
+
+  position: relative;
+  top: 240px;
+
+
+
+}
+
+.testmonial-logo {
+  height: fit-content;
+  width: fit-content;
+  font-size: 20px;
+  font-family: "Architects Daughter", cursive;
+  font-weight: 400;
+  color: #3D2B1F;
+  justify-self: center;
+
+}
+
+.button-position {
+  position: relative;
+  top: 325px;
+}
+
+
+
+.track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: marquee-scroll 30s linear infinite;
+
+}
+
+.group {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: flex-start;
+  gap: clamp(0.75rem, 1.5vw, 1rem);
+  padding-right: clamp(0.75rem, 1.5vw, 1rem);
+
+
+}
+
+
+
+
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 clamp(220px, 24vw, 280px);
+  justify-content: center;
+  align-items: center;
+  height: clamp(240px, 24vw, 280px);
+  padding: clamp(0.875rem, 2vw, 1.25rem);
+  border-radius: 30px;
+  border: solid black;
+  flex-direction: column;
+}
+
+.x {
+
+  position: relative;
+  bottom: 30px;
+  width: 100%;
+  height: 50px;
+  padding-right: 2em;
+  font-family: "Architects Daughter", cursive;
+  font-weight: 400;
+
+}
+
+.x h2 {
+  position: relative;
+  left: 52px;
+  bottom: 40px;
+  font-size: clamp(1rem, 2vw, 1.35rem);
+}
+
+.bo {
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  border: solid black;
+  position: relative;
+  bottom: 2px;
+  left: 2px;
+
+
+}
+
+.paragraph {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .testmonial-heading {
+    top: 150px;
+  }
+
+  .button-position {
+    top: 200px;
+
+  }
+
+}
+
+@media (max-width: 600px) {
+  .testmonials {
+    top: clamp(3rem, 18vw, 5rem);
+  }
+
+  .testmonial-heading {
+    top: 50px;
+  }
+
+  
+
+  .group {
+    gap: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .card {
+    flex-basis: min(92vw, 420px);
+    height: clamp(210px, 60vw, 240px);
+    border-radius: 24px;
+  }
+
+  .marquee-track {
+    animation-duration: 36s;
+    animation-timing-function: steps(6, end);
+  }
+
+  .x h2 {
+    font-size: 2rem;
+  }
+
+  .paragraph {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 780px) {
+
+  .button-position {
+    top: 200px;
+  }
+
+}
+@media (max-width: 785px) {
+
+  .button-position {
+    top: 100px;
+  }
+
+}

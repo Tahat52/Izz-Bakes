@@ -1,0 +1,141 @@
+.footer {
+
+      position: relative;
+      width: 100%;
+
+      height: clamp(34rem, 44vw, 40rem);
+      align-items: center;
+      top: clamp(1.75rem, 17vw, 20rem);
+      display: flex;
+
+      color: #F6F3EE;
+      background-color: #2f0e07;
+      border-top-left-radius: clamp(2rem, 4vw, 3.75rem);
+      border-top-right-radius: clamp(2rem, 4vw, 3.75rem);
+      padding: clamp(2rem, 5vw, 3.5rem) clamp(1rem, 4vw, 3rem) 2rem;
+      box-shadow:
+            inset 0px 2px 5px #A39485,
+            0 10px 25px rgba(0, 0, 0, 0.4);
+      flex-direction: column;
+}
+
+.hea {
+      position: relative;
+      font-family: "Architects Daughter", cursive;
+      font-weight: 400;
+      font-size: clamp(4rem, 11.6vw, 10rem);
+      
+}
+
+.hea h1 {
+      margin: 0;
+      font: inherit;
+      line-height: 1.1;
+      white-space: nowrap;
+}
+
+
+
+.op {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: clamp(0.75rem, 3vw, 2.5rem);
+      width: 100%;
+      margin-top: 50px;
+}
+
+.op a {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      color: #F6F3EE;
+      padding: 0.4rem;
+      text-align: center;
+}
+
+.allright {
+     margin-top: 200px;
+
+}
+
+.allright p {
+      font-size: clamp(0.875rem, 10vw, 1rem);
+      line-height: 1.5;
+      margin: 0;
+
+}
+
+@media (max-width: 600px) {
+      .footer {
+            top: clamp(3rem, 12vw, 5rem);
+            min-height: 34rem;
+            padding: 2rem 1rem 1.5rem;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+      }
+
+      .hea {
+            font-size: clamp(5rem, 8vw, 9rem);
+      }
+
+      .op {
+            flex-direction: column;
+            gap: 0.25rem;
+            margin-top: 1rem;
+      }
+
+      .op a {
+            padding: 10px 8px;
+      }
+
+      .allright {
+           margin-top:100px ;
+      }
+
+     
+}
+
+
+@media (max-width: 480px) {
+      .footer {
+            top: clamp(4rem, 10vw, 8rem);
+            height: 40rem;
+            padding: 1rem 0.5rem 1rem;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+           
+          
+      }
+
+      .hea {
+            font-size: clamp(3rem, 5vw, 6rem);
+            
+      }
+
+      .op {
+            flex-direction: column;
+            gap: 0.2rem;
+            margin-top: 10;
+           
+      }
+
+      .op a {
+            padding: 10px 8px;
+      }
+
+      .allright {
+          margin-top: 40px;
+
+      }
+
+     
+}
+
+
+@media (max-width: 1280px) {
+       .allright {
+          margin-top: 160px;
+
+      }
+}

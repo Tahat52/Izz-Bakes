@@ -1,0 +1,287 @@
+.container {
+    border: none;
+    position: relative;
+    top: 100px;
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+.contain {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    width: min(100%, 900px);
+    height: fit-content;
+    gap: 20px;
+    padding: 10px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+
+.cookies {
+
+    width: 100%;
+    max-width: 183px;
+    height: 244px;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    overflow: hidden;
+
+   
+   
+
+}
+
+
+.Brownie {
+
+    width: 100%;
+    max-width: 183px;
+    height: 244px;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    overflow: hidden;
+}
+
+
+
+.bu {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 30px);
+    max-width: 150px;
+    height: 40px;
+    background-color: rgba(243, 239, 234, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 25px;
+    border: none;
+    font-size: 25px;
+    color: #2B1D19;
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.bu::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #f3ebdf;
+    border-radius: 25px;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.bu:hover::after {
+    width: 100%;
+}
+
+.text {
+    width: min(90%, 900px);
+    height: fit-content;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+
+}
+
+
+
+
+
+.text h1 {
+    text-align: center;
+
+    font-family: "Architects Daughter", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    color: #2f0e07;
+    line-height: 50px;
+    font-size: clamp(28px, 5vw, 40px);
+
+    margin: 0 0 20px;
+}
+
+
+.text p {
+    text-align: center;
+    font-family: "Architects Daughter", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #2B1D19;
+    line-height: 50px;
+    font-size: clamp(14px, 2vw, 18px);
+
+    margin: 0;
+}
+
+.b {
+    width: 100%;
+    position: relative;
+    top: 15px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.button1,
+.button2,
+.button3 {
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 0 20px;
+    font-size: 12px;
+    background-color: #f3ebdf;
+      box-shadow:
+        inset 2px 2px 3px #F2E8DC,
+        0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+
+.button1 {
+    width: 70px;
+}
+
+
+.button2,
+.button3 {
+    width: 110px;
+    margin-left: 0;
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 30px 15px;
+        row-gap: 30px;
+    }
+
+    .conatain {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        gap: 20px;
+    }
+
+    .cookies,
+    .Brownie {
+        width: 100%;
+        max-width: 183px;
+        height: 240px;
+    }
+
+    .text {
+        width: 95%;
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    .container {
+        top: -200px;
+        padding: 25px 10px;
+    }
+
+    .conatain {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        padding: 5px;
+    }
+
+    .cookies,
+    .Brownie {
+        width: 100%;
+        height: 210px;
+        max-width: 160px;
+        border-radius: 20px;
+    }
+
+    
+
+    .bu {
+        width: calc(100% - 20px);
+        height: 35px;
+        font-size: 21px;
+        bottom: 8px;
+    }
+
+    .text h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .text p {
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    .b {
+        gap: 8px;
+        margin-bottom:20px;
+        margin-left: 10px;
+    }
+
+    .button1,
+    .button2,
+    .button3 {
+        height: 45px;
+        font-size: 13px;
+        
+
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    .conatain {
+        grid-template-columns: 1fr;
+    }
+
+    .cookies,
+    .Brownie {
+        width: 180px;
+        height: 235px;
+    }
+
+}

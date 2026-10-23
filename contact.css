@@ -1,0 +1,200 @@
+.contact {
+    width: 80%;
+    position: relative;
+    margin: 200px auto 150px;
+
+    top: 200px;
+}
+
+.subcontact {
+    width: 100%;
+    min-height: 300px;
+    border: 2px solid black;
+    border-radius: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+
+    background-color: transparent;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.info {
+    min-height: 150px;
+    width: 300px;
+    max-width: 100%;
+
+    text-align: center;
+    font-family: "Architects Daughter", cursive;
+    font-weight: 400;
+    font-size: larger;
+}
+
+.link {
+    min-height: 200px;
+    width: 350px;
+    max-width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+}
+
+.instagram {
+    position: relative;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+    border-radius: 50%;
+    margin-left: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 200ms ease;
+}
+
+.instagram:hover {
+    background-color: var(--color);
+}
+
+a {
+    position: relative;
+    color: #2B1D19;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+a::before {
+
+    content: attr(data-name);
+    position: absolute;
+    background-color: var(--color);
+    bottom: 90px;
+    border-radius: 10em;
+    scale: 0;
+    opacity: 0;
+    transition: 200ms ease;
+    padding: .5em 1em;
+
+}
+
+a::after {
+    
+    content: "";
+    position: absolute;
+    bottom: 80px;
+
+    scale: 0;
+    opacity: 0;
+    border-top: .7em solid var(--color);
+    border-left: .5em solid transparent;
+    border-right: .5em solid transparent;
+    transform-origin: top;
+    transition: scale 200ms ease .2s;
+
+}
+
+a:hover::before,
+a:hover::after {
+   
+    opacity: 1;
+    scale: 1;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .contact {
+        width: 90%;
+        margin: 100px auto 200px;
+    }
+
+    .subcontact {
+        flex-direction: column;
+        gap: 2em;
+
+        min-height: auto;
+        padding: 40px 20px;
+
+        border-radius: 40px;
+    }
+
+    .info {
+        width: 100%;
+        min-height: auto;
+        font-size: 1rem;
+    }
+
+    .link {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .instagram {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .contact {
+        width: 90%;
+        margin: 100px auto 25rem;
+       
+
+    }
+
+    .subcontact {
+        padding: 30px 15px;
+        gap: 2em;
+
+        border-radius: 30px;
+    }
+
+    .info {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .link {
+        min-height: 100px;
+        gap: 10px;
+    }
+
+    .instagram {
+        width: 80px;
+        height: 80px;
+        min-width: 80px;
+        
+    }
+
+    a::before {
+        font-size: 0.85rem;
+        padding: .4em .8em;
+        left: -5px;
+    }
+
+
+    a::after {
+    
+    content: "";
+    position: absolute;
+    bottom: 80px;
+    left: 25px;
+
+
+}
+}
